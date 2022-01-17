@@ -18,7 +18,6 @@ class AboutApp : AppCompatActivity() {
         val changeAppNameBtn = findViewById<Button>(R.id.changeAppName)
         changeAppNameBtn.setOnClickListener(changeAppNameBtnListener)
     }
-
     private val changeAppNameBtnListener: View.OnClickListener = View.OnClickListener { view ->
         when(view.id) {
             R.id.changeAppName -> {

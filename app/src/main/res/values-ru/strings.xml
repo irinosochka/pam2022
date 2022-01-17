@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Сервис лекарств</string>
+    <string name="alertQuantity">Количество не может быть 0</string>
+    <string name="alertEmptyValue">Поле не может быть пустым</string>
+    <string name="alertEmptyData">Выбери дату</string>
+    <string name="error">Ошибка</string>
+    <string name="successAdd">Таблетка добавлена</string>
+    <string name="successChange">Изменения сохранены</string>
+    <string name="quantityOfPills">количество</string>
+    <string name="youAdd">Добавил таблетку</string>
+    <string name="date">дата</string>
+    <string name="about_app">О приложении</string>
+    <string name="add_pill">Добавить таблетку</string>
+    <string name="about_author">О авторе</string>
+    <string name="change_app_name">Измени название приложения</string>
+    <string name="name">Название:</string>
+    <string name="input_new_name_app">Выбери новое название</string>
+    <string name="change">Измени</string>
+    <string name="adding_pills">Добавленные таблетки</string>
+    <string name="pill">Таблетка:</string>
+    <string name="input_name_of_pill">Введи имя  таблетки</string>
+    <string name="quantity">Количество:</string>
+    <string name="input_quantity">Введи количество</string>
+    <string name="InputDate">Дата:</string>
+    <string name="init_date">Выбрать дату</string>
+    <string name="add">Добавить</string>
+    <string name="studentName">Ирина</string>
+    <string name="studentSurname">Новосельская</string>
+    <string name="studentGrup">Група 3</string>
+    <string name="pills_service">Сервис лекарств</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus, risus in rhoncus lacinia, enim justo vehicula erat, sit amet molestie felis massa vel metus. Donec fringilla laoreet ante pretium tristique. Nunc venenatis consequat dolor. Vestibulum ante ipsum, facilisis non pharetra vitae, ornare in sem. Mauris tempor condimentum metus id luctus. Duis mi ante, suscipit nec vestibulum quis, cursus vitae nisl. Nunc viverra faucibus turpis dictum congue. Aliquam vulputate, leo nec varius laoreet, diam velit facilisis turpis, nec ullamcorper felis ex sed tortor. Ut id ipsum cursus, volutpat magna eu, accumsan urna.</string>
+    <string name="change_name_of_app">Измени название приложения</string>
+    <string name="notification">Уведомления</string>
+
+
+</resources>
