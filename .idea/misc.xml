@@ -6,10 +6,10 @@
         <entry key="app/src/main/res/layout/activity_about_added_pill.xml" value="0.1503623188405797" />
         <entry key="app/src/main/res/layout/activity_about_app.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_about_author.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_add_pill.xml" value="0.1503623188405797" />
-        <entry key="app/src/main/res/layout/activity_change_app_name.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_add_pill.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_change_app_name.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_list_of_pills.xml" value="0.1503623188405797" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.6040696373220041" />
       </map>
     </option>
   </component>
