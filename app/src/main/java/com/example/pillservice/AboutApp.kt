@@ -19,7 +19,7 @@ class AboutApp : AppCompatActivity() {
         changeAppNameBtn.setOnClickListener(changeAppNameBtnListener)
     }
 
-    val changeAppNameBtnListener: View.OnClickListener = View.OnClickListener { view ->
+    private val changeAppNameBtnListener: View.OnClickListener = View.OnClickListener { view ->
         when(view.id) {
             R.id.changeAppName -> {
                 val i = Intent(this, ChangeAppName::class.java);
@@ -35,10 +35,10 @@ class AboutApp : AppCompatActivity() {
 
         if(requestCode == 1) {
             if(resultCode == RESULT_OK) {
-                if(data!!.getStringExtra("nameApp")!!.isNotEmpty()) {
-                    nameApp = data.getStringExtra("nameApp")!!;
+                nameApp = if(data!!.getStringExtra("nameApp")!!.isNotEmpty()) {
+                    data.getStringExtra("nameApp")!!;
                 } else {
-                    nameApp = "No name"
+                    "No name"
                 }
             }
         }
