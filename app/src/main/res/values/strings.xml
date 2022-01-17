@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PillService</string>
+    <string name="alertQuantity">Quantity cannot be 0</string>
+    <string name="alertEmptyValue">Value cannot be empty</string>
+    <string name="alertEmptyData">Set the date</string>
+    <string name="error">Error</string>
+    <string name="successAdd">Pill has been added</string>
+    <string name="successChange">Changes have been saved</string>
+    <string name="quantityOfPills">quantity</string>
+    <string name="youAdd">You added pill</string>
+    <string name="date">date</string>
+    <string name="about_app">About app</string>
+    <string name="add_pill">Add pill</string>
+    <string name="about_author">About author</string>
+    <string name="change_app_name">Change app name</string>
+    <string name="name">Name:</string>
+    <string name="input_new_name_app">Input new name app</string>
+    <string name="change">Change</string>
+    <string name="adding_pills">Adding pills</string>
+    <string name="pill">Pill:</string>
+    <string name="input_name_of_pill">Input name of pill</string>
+    <string name="quantity">Quantity:</string>
+    <string name="input_quantity">Input quantity</string>
+    <string name="InputDate">Date:</string>
+    <string name="init_date">Init date</string>
+    <string name="add">Add</string>
+    <string name="studentName">Iryna</string>
+    <string name="studentSurname">Novoselska</string>
+    <string name="studentGrup">Gr 3</string>
+    <string name="pills_service">Pills Service</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus, risus in rhoncus lacinia, enim justo vehicula erat, sit amet molestie felis massa vel metus. Donec fringilla laoreet ante pretium tristique. Nunc venenatis consequat dolor. Vestibulum ante ipsum, facilisis non pharetra vitae, ornare in sem. Mauris tempor condimentum metus id luctus. Duis mi ante, suscipit nec vestibulum quis, cursus vitae nisl. Nunc viverra faucibus turpis dictum congue. Aliquam vulputate, leo nec varius laoreet, diam velit facilisis turpis, nec ullamcorper felis ex sed tortor. Ut id ipsum cursus, volutpat magna eu, accumsan urna.</string>
+    <string name="change_name_of_app">Change name of app</string>
+    <string name="notification">Notification</string>
+
+
+</resources>
