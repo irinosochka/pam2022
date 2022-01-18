@@ -24,7 +24,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="a82d5af3-1f2b-4142-a428-7643b62b440b">
+        <schema name="main" object-types="table, view, constraint, index, column, dataset trigger" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="a82d5af3-1f2b-4142-a428-7643b62b440b">
@@ -36,6 +40,14 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="a82d5af3-1f2b-4142-a428-7643b62b440b" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="a82d5af3-1f2b-4142-a428-7643b62b440b" dataset="main.pills" active-filter-id="EMPTY_FILTER">
+      <filter id="576ada41-fec4-4e12-800a-db06ba7a1229" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="pill_id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="a82d5af3-1f2b-4142-a428-7643b62b440b" dataset="main.android_metadata" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -81,7 +93,7 @@
           <port value="" />
           <database value="" />
           <files>
-            <file path="$PROJECT_DIR$/../../pillsDataBase.db" schema="main" />
+            <file path="$PROJECT_DIR$/../../../pillsDataBase.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />

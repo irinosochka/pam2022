@@ -53,6 +53,7 @@ class AddPill : AppCompatActivity() {
             runAboutAddedPill("$namePill , \n${getString(R.string.quantityOfPills)} : $quantity \n" +
              "${getString(R.string.date)} : $dateString.")
             Toast.makeText(applicationContext, R.string.successAdd, Toast.LENGTH_LONG).show()
+            AddPill()
             finish()
         }
     }
@@ -91,17 +92,17 @@ class AddPill : AppCompatActivity() {
         )
         datePickerDialog.show()
     }
-//
-//    private fun AddPill(){
-//        val editPill = findViewById<EditText>(R.id.editPill)
-//        val editQuantity = findViewById<EditText>(R.id.editQuantity)
-//
-//        val namePill = editPill.text.toString()
-//        val quantityString = editQuantity.text.toString()
-//        val quantity = Integer.parseInt(quantityString)
-//        val dataBaseHandler = DataBaseHelper(this, null, null, 1)
-//        val pill = Pill(namePill, quantity, dateString )
-//        dataBaseHandler.addPill(pill)
-//        Toast.makeText(applicationContext, R.string.successAdd, Toast.LENGTH_LONG).show()
-//    }
+
+    private fun AddPill(){
+        val editPill = findViewById<EditText>(R.id.editPill)
+        val editQuantity = findViewById<EditText>(R.id.editQuantity)
+
+        val namePill = editPill.text.toString()
+        val quantityString = editQuantity.text.toString()
+        val quantity = Integer.parseInt(quantityString)
+        val dataBaseHandler = DataBaseHelper(this, null, null, 1)
+        val pill = Pill(namePill, quantity, dateString )
+        dataBaseHandler.addPill(pill)
+        Toast.makeText(applicationContext, R.string.successAdd, Toast.LENGTH_LONG).show()
+    }
 }

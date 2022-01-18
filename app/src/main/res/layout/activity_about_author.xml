@@ -18,52 +18,33 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/darkSeaGreen"/>
-
-        <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:layout_margin="10dp"
-        android:textSize="32sp"
-        android:gravity="center"
-        android:text="@string/studentName"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/darkSeaGreen"/>
-
-        <TextView
+        <EditText
+            android:id="@+id/find"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:layout_margin="10dp"
-            android:textSize="32sp"
-            android:gravity="center"
-            android:text="@string/studentSurname"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/darkSeaGreen"/>
-
+            android:hint="name of pill"
+            />
+        <Button
+            android:id="@+id/findBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find"/>
         <TextView
+            android:id="@+id/findString"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:layout_margin="10dp"
-            android:textSize="32sp"
-            android:gravity="center"
-            android:text="@string/studentGrup"/>
-
-        <View
+            />
+        <EditText
+            android:id="@+id/delete"
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/darkSeaGreen"/>
+            android:layout_height="wrap_content"
+            android:hint="name of pill"
+            />
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

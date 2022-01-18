@@ -28,7 +28,7 @@ class DataBaseHelper(
             + COLUMN_ID + " INTEGER PRIMARY KEY,"
             + COLUMN_PILL_NAME + " TEXT,"
             + COLUMN_PILL_QUANTITY + " INTEGER,"
-            + COLUMN_PILL_DAY + " TEXT," + ")" )
+            + COLUMN_PILL_DAY + " TEXT" + ")" )
         db.execSQL(CREATE_PILLS_TABLE)
     }
 
@@ -46,4 +46,40 @@ class DataBaseHelper(
         database.insert(TABLE_PILLS, null, data)
         database.close()
     }
+
+    fun findPill(pillName: String): Pill? { val query =
+        "SELECT * FROM $TABLE_PILLS WHERE $COLUMN_PILL_NAME = \"$pillName\""
+        val database = this.writableDatabase
+        val cursor = database.rawQuery(query, null)
+        var pill: Pill? = null
+
+        if (cursor.moveToFirst()) { cursor.moveToFirst()
+            val id = Integer.parseInt(cursor.getString(0))
+            val pillName = cursor.getString(1)
+            val pill_quantity = Integer.parseInt(cursor.getString(2))
+            val date = cursor.getString(3)
+            pill = Pill(id, pillName, pill_quantity, date)
+            cursor.close()
+        }
+        database.close()
+        return pill
+    }
+
+    fun deletePill(pillName: String): Boolean { var result = false
+        val query =
+            "SELECT * FROM $TABLE_PILLS WHERE $COLUMN_PILL_NAME = \"$pillName\""
+        val database = this.writableDatabase
+        val cursor = database.rawQuery(query, null)
+        if (cursor.moveToFirst()) {
+            val id = Integer.parseInt(cursor.getString(0))
+            database.delete(
+                TABLE_PILLS, COLUMN_ID + " = ?",
+            arrayOf(id.toString()))
+            cursor.close()
+            result = true
+        }
+        database.close()
+        return result
+    }
+
 }
